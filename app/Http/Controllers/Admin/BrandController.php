@@ -16,7 +16,7 @@ class BrandController extends Controller
     {
         $data = [
             'head_title' => 'Marcas – '.config('app.name'),
-            'title' => 'Listar'
+            'title' => 'Listar marcas'
         ];
         return view('admin.brands.index',$data);
     }

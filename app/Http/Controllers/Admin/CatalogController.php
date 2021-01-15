@@ -14,7 +14,11 @@ class CatalogController extends Controller
      */
     public function index()
     {
-        //
+        $data = [
+            'head_title' => 'Catálogo – '.config('app.name'),
+            'title' => 'Catálogo'
+        ];
+        return view('admin.catalog',$data);
     }
 
     /**

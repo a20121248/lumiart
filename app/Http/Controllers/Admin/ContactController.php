@@ -14,7 +14,11 @@ class ContactController extends Controller
      */
     public function index()
     {
-        //
+        $data = [
+            'head_title' => 'Contacto – '.config('app.name'),
+            'title' => 'Contacto'
+        ];
+        return view('admin.contact',$data);
     }
 
     /**

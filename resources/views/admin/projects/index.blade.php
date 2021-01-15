@@ -1,5 +1,6 @@
 @extends('admin.layouts.main')
 @section('head-title', $head_title)
+@section('title', $title)
 @section('content')
 <!-- Default box -->
 <div class="card">

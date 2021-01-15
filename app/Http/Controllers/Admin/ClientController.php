@@ -16,7 +16,7 @@ class ClientController extends Controller
     {
         $data = [
             'head_title' => 'Clientes – '.config('app.name'),
-            'title' => 'Listar'
+            'title' => 'Listar clientes'
         ];
         return view('admin.clients.index',$data);
     }

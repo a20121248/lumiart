@@ -13,8 +13,19 @@
         <img src="{{ asset('storage/images/users/user7-128x128.jpg') }}" class="img-circle elevation-2" alt="Mariela de la Cruz">
       </div>
       <div class="info">
-        <a href="#" class="d-block">Mariela de la Cruz</a>
+        <a href="{{ route('admin.users.profile') }}" class="d-block">Mariela de la Cruz</a>
       </div>
+
+      {{--<div class="info">
+        <div class="dropdown">
+          <a href="#" class="dropdown-toggle d-block" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Mariela de la Cruz</a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="{{ route('profile.show') }}">Perfil</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Cerrar sesión</a></li>
+          </ul>
+        </div>
+      </div>--}}
     </div>
 
     <!-- Sidebar Menu -->
@@ -22,6 +33,7 @@
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <!-- Add icons to the links using the .nav-icon class
              with font-awesome or any other icon font library -->
+        <li class="nav-header">DATOS GENERALES</li>
         <li class="nav-item">
           <a href="{{ route('admin.dashboard') }}" class="nav-link {!! Route::is('admin.dashboard') ? 'active' : '' !!}">
             <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -30,9 +42,8 @@
             </p>
           </a>
         </li>
-        <li class="nav-header">DATOS GENERALES</li>
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="{{ route('admin.settings') }}" class="nav-link {!! Route::is('admin.settings') ? 'active' : '' !!}">
             <i class="nav-icon fas fa-cog"></i>
             <p>
               Configuraciones
@@ -40,7 +51,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="{{ route('admin.catalog') }}" class="nav-link {!! Route::is('admin.catalog') ? 'active' : '' !!}">
             <i class="nav-icon fas fa-list"></i>
             <p>
               Catálogo
@@ -48,7 +59,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="{{ route('admin.contact') }}" class="nav-link {!! Route::is('admin.contact') ? 'active' : '' !!}">
             <i class="nav-icon fas fa-phone-square"></i>
             <p>
               Contacto
@@ -56,7 +67,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="{{ route('admin.images') }}" class="nav-link {!! Route::is('admin.images') ? 'active' : '' !!}">
             <i class="nav-icon far fa-image"></i>
             <p>
               Imágenes

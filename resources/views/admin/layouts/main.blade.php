@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   @include('admin.layouts.partials.head')
-  <body class="hold-transition sidebar-mini">
+  <body class="hold-transition sidebar-mini text-sm">
     <!-- Site wrapper -->
     <div class="wrapper">
       <header class="page-head">
@@ -17,14 +17,14 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1>Página de ejemplo</h1>
+                <h1>@yield('title')</h1>
               </div>
-              <div class="col-sm-6">
+              {{--<div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                   <li class="breadcrumb-item"><a href="#">Inicio</a></li>
                   <li class="breadcrumb-item active">Página de ejemplo</li>
                 </ol>
-              </div>
+              </div>--}}
             </div>
           </div><!-- /.container-fluid -->
         </section>

@@ -14,7 +14,11 @@ class ImageController extends Controller
      */
     public function index()
     {
-        //
+        $data = [
+            'head_title' => 'Imágenes – '.config('app.name'),
+            'title' => 'Imágenes'
+        ];
+        return view('admin.images',$data);
     }
 
     /**

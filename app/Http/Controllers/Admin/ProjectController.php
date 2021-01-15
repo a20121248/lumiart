@@ -16,7 +16,7 @@ class ProjectController extends Controller
     {
         $data = [
             'head_title' => 'Proyectos – '.config('app.name'),
-            'title' => 'Listar'
+            'title' => 'Listar proyectos'
         ];
         return view('admin.projects.index',$data);
     }

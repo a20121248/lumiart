@@ -16,7 +16,7 @@ class SupplierController extends Controller
     {
         $data = [
             'head_title' => 'Proveedores – '.config('app.name'),
-            'title' => 'Listar'
+            'title' => 'Listar proveedores'
         ];
         return view('admin.suppliers.index',$data);
     }

@@ -16,7 +16,7 @@ class ProductController extends Controller
     {
         $data = [
             'head_title' => 'Productos – '.config('app.name'),
-            'title' => 'Listar'
+            'title' => 'Listar productos'
         ];
         return view('admin.products.index',$data);
     }

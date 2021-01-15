@@ -8,6 +8,20 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
     /**
+     * Display the specified resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function profile()
+    {
+        $data = [
+            'head_title' => 'Perfil – '.config('app.name'),
+            'title' => 'Perfil'
+        ];
+        return view('admin.users.profile',$data);
+    }
+
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -16,7 +30,7 @@ class UserController extends Controller
     {
         $data = [
             'head_title' => 'Equipo – '.config('app.name'),
-            'title' => 'Listar'
+            'title' => 'Listar usuarios'
         ];
         return view('admin.users.index',$data);
     }
@@ -50,7 +64,11 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+        $data = [
+            'head_title' => 'Equipo – '.config('app.name'),
+            'title' => 'Listar'
+        ];
+        return view('admin.users.index',$data);
     }
 
     /**

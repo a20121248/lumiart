@@ -11,16 +11,19 @@ const mix = require('laravel-mix');
  |
  */
 
-/*mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);*/
-
 mix.js('resources/js/app/main.js', 'public/js/app.js')
    .js('resources/js/app/home.js', 'public/js/home.js')
    .sass('resources/sass/app/main.scss', 'public/css/app.css')
    .sass('resources/sass/app/home.scss', 'public/css/home.css')
    .js('resources/js/admin/main.js', 'public/js/admin.js')
-   .sass('resources/sass/admin/main.scss', 'public/css/admin.css');
+   .sass('resources/sass/admin/main.scss', 'public/css/admin.css')
+   .postCss('resources/sass/app.css', 'public/css', [
+        require('postcss-import'),
+        require('tailwindcss'),
+        require('autoprefixer')
+    ]);
 
 
+if (mix.inProduction()) {
+    mix.version();
+}

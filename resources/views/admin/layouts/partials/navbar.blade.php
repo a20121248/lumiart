@@ -15,6 +15,12 @@
 
   <!-- Right navbar links -->
   <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" data-widget="fullscreen" href="" role="button" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+        <i class="fas fa-sign-out-alt"></i>
+        Cerrar sesión
+      </a>
+    </li>
     <!-- Notifications Dropdown Menu -->
     <li class="nav-item">
       <a class="nav-link" data-widget="fullscreen" href="#" role="button">
@@ -22,5 +28,9 @@
       </a>
     </li>
   </ul>
+
+  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display:none;">
+    @csrf
+  </form>
 </nav>
 <!-- /.navbar -->

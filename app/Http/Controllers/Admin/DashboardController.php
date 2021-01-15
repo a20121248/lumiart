@@ -14,10 +14,11 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('admin.dashboard', [
-            'head_title' => 'Panel de adminitración – LumiArt',
-            'title' => 'Administración'
-        ]);
+        $data = [
+            'head_title' => 'Panel de administración – '.config('app.name'),
+            'title' => 'Dashboard'
+        ];
+        return view('admin.dashboard',$data);
     }
 
     /**

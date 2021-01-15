@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class SettingController extends Controller
+class SettingScontroller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,11 @@ class SettingController extends Controller
      */
     public function index()
     {
-        //
+        $data = [
+            'head_title' => 'Configuraciones – '.config('app.name'),
+            'title' => 'Configuraciones'
+        ];
+        return view('admin.settings',$data);
     }
 
     /**

@@ -37,8 +37,12 @@ use App\Http\Controllers\Admin\UserController;
 });*/
 
 //Route::group(['prefix' => 'admin', 'middleware' => 'is.admin', 'as'=> 'admin.'], function () {
-Route::group(['prefix' => 'admin', 'as'=> 'admin.'], function () {
-    Route::get('/admin', 'DashboardController@index')->name('dashboard');
+Route::group(['middleware' => ['auth:sanctum', 'verified'], 'prefix' => 'admin', 'as'=> 'admin.'], function () {
+    Route::get('/', 'App\Http\Controllers\Admin\DashboardController@index')->name('dashboard');
+    Route::get('/configuraciones', 'App\Http\Controllers\Admin\SettingsController@index')->name('settings');
+    Route::get('/catalogo', 'App\Http\Controllers\Admin\CatalogController@index')->name('catalog');
+    Route::get('/contacto', 'App\Http\Controllers\Admin\ContactController@index')->name('contact');
+    Route::get('/imagenes', 'App\Http\Controllers\Admin\ImageController@index')->name('images');
 
     Route::resource('clientes', ClientController::class)->names([
         'index'  => 'clients.index',
@@ -75,16 +79,10 @@ Route::group(['prefix' => 'admin', 'as'=> 'admin.'], function () {
         'create' => 'users.create',
         'edit'   => 'users.edit'
     ]);
+
+    Route::get('/perfil', 'App\Http\Controllers\Admin\UserController@profile')->name('users.profile');
 });
 
-
-Route::get('/admin', 'App\Http\Controllers\Admin\DashboardController@index')->name('admin.dashboard');
-
-
-
-
-
-Route::get('/admin', 'App\Http\Controllers\Admin\DashboardController@index')->name('admin.dashboard');
 
 
 Route::get('/', 'App\Http\Controllers\App\PageController@getHome')->name('home');
@@ -106,3 +104,6 @@ Route::get('/contactanos', ['uses' => 'App\PageController@getHome'])->name('cont
 Route::get('/buscar', ['uses' => 'App\PageController@getHome'])->name('search');
 
 Route::get('/privacidad', ['uses' => 'App\PageController@getHome'])->name('privacy');
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');

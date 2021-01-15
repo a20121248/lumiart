@@ -1,5 +1,5 @@
 require('../bootstrap');
-
+require('alpinejs');
 
 /*!
  * AdminLTE v3.1.0-rc (https://adminlte.io)
