@@ -5,6 +5,20 @@
 @import 'navbar';
 @import 'variables';
 
+//@import 'alma/alma-custom.css';
+//@import 'alma/alma-foundations.css';
+//@import 'alma/alma-select.css';
+//@import 'alma/alma-woo-layout.css';
+//@import 'alma/alma-woocommerce.css';
+//@import 'alma/blog.css';
+//@import 'alma/buddypress.css';
+//@import 'alma/component.css';
+//@import 'alma/flexslider.css';
+//@import 'alma/font-awesome-painel-custom.min.css';
+//@import 'alma/icons-font.css';
+//@import 'alma/load-posts.css';
+//@import 'alma/mb.YTPlayer.css';
+//@import 'alma/retina.css';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
@@ -16,3 +30,28 @@
 @import '~@fortawesome/fontawesome-free/scss/brands';
 
 @charset "UTF-8";
+
+@import "variables";
+@import "normalize";
+@import "header";
+@import "hero";
+@import "service";
+@import "about";
+@import "pricing";
+@import "introvideo";
+@import "blog";
+@import "newsletter";
+@import "clients";
+@import "footer";
+@import "responsive";
+@import "contact";
+@import "error";
+@import "free-version";
+
+
+.lumiart-header {
+  .navbar-icons {
+  	width: 150px;
+  	text-align: right;
+  }
+}

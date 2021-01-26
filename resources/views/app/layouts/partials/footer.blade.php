@@ -1,82 +1,83 @@
-<div id="big_footer" class="">
-  <div id="primary_footer">
-    <div class="footer_newsletter"><div class="mail-box"><div class="mail-news container"><div class="news-l"><div class="opacity-icon"><i class="fa fa-paper-plane-o"></i></div><div class="banner"><h3>Suscríbete a nuestro Newsletter</h3><p>Reciba noticias, actualizaciones interesantes y gratuitas y nuevos productos lanzados (¡sin spam!)</p></div><div class="form">
-      <div id="mc_embed_signup">
-        <form>
-          <div id="mc_embed_signup_scroll">
-          <div class="mc-field-group">
-          <label for="mce-EMAIL">Correo electrónico</label>
-          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+<!-- Start Footer Area -->
+<footer class="footer">
+  <!-- Start Middle Top -->
+  <div class="footer-middle">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-12">
+          <!-- Single Widget -->
+          <div class="f-about single-footer">
+            <div class="logo">
+              <a href="{{ route('home') }}"><img src="{{ asset('storage/logos/light.png') }}" alt="Logo"></a>
+            </div>
+            <p>Start building your creative website with our awesome template Massive.</p>
+            <div class="footer-social">
+              <ul>
+                <li><a href="#"><i class="lni lni-instagram"></i></a></li>
+                <li><a href="#"><i class="lni lni-twitter"></i></a></li>
+                <li><a href="#"><i class="lni lni-linkedin"></i></a></li>
+              </ul>
+            </div>
           </div>
-          <div id="mce-responses" class="clear">
-          <div class="response" id="mce-error-response"></div>
-          <div class="response" id="mce-success-response"></div>
-          </div> 
-          <div aria-hidden="true"><input type="text" name="b_19baf45026313d24a55bcf058_3df231ca82" value=""></div>
-          <div class="clear"><input type="submit" value="Subscribir" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-          </div>
-        </form>
+          <!-- End Single Widget -->
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <!-- Single Widget -->
+            <div class="single-footer f-link">
+                <h3>Pages</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Our Blog</a></li>
+                </ul>
+            </div>
+            <!-- End Single Widget -->
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <!-- Single Widget -->
+            <div class="single-footer f-link">
+                <h3>More Links</h3>
+                <ul>
+                    <li><a href="#">Topics</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">License</a></li>
+                </ul>
+            </div>
+            <!-- End Single Widget -->
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <!-- Single Widget -->
+            <div class="single-footer f-link">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Support Team</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <!-- End Single Widget -->
+        </div>
       </div>
-      </div></div></div></div>
-    </div>
-    <div class="container no-fcontainer">
-    <div class="footer_sidebar col-xs-12 col-md-4"> <div class="widget widget-contact-info">
-    <div class="widget-contact-content centered">
-    <i class="fas fa-map-marker"></i>
-    <h4 class="widget_title_span">DIRECCIÓN</h4>
-    <div class="widget-contact-info-content">PO Box 16122 Collins Street West
-    Victoria 8007 Australia</div>
-    </div>
-    </div>
-    </div>
-    <div class="footer_sidebar col-xs-12 col-md-4"> <div class="widget widget-contact-info">
-    <div class="widget-contact-content centered">
-    <i class="fas fa-envelope"></i>
-    <h4 class="widget_title_span">EMAIL</h4>
-    <div class="widget-contact-info-content"><a href="/cdn-cgi/l/email-protection#442925362f21302d2a2304213c25293428216a272b29"><span class="__cf_email__" data-cfemail="0a676b78616f7e63646d4a6f726b677a666f24696567">lumiart.peru@gmail.com</span></a><br /><br /></div>
-    </div>
-    </div>
-    </div>
-    <div class="footer_sidebar col-xs-12 col-md-4"> <div class="widget widget-contact-info">
-    <div class="widget-contact-content centered">
-    <i class="fas fa-phone"></i>
-    <h4 class="widget_title_span">TELÉFONOS</h4>
-    <div class="widget-contact-info-content"><a href='tel:+222848333941'>(+222) 848 333 941
-    </a><a href='tel:+12484413555'>(+12) 484 413 555</a></div>
-    </div>
-    </div>
-    </div>
     </div>
   </div>
-  <div id="secondary_footer">
-    <div class="container ">
-      <a class="footer_logo align-center" href="http://demos.upperthemes.com/alma/demo1/" tabindex="-1">
-        <img class="footer_logo_normal notalone" src="{{ asset('storage/logos/light-2.png') }}" alt="" title="">
-        <img class="footer_logo_retina" src="{{ asset('storage/logos/light-2.png') }}" alt="" title="">
-      </a>
-      <div class="social-icons-fa align-center">
-        <ul>
-          <li>
-            <a href="#" target="_blank" class="social-network facebook" title="Facebook"><i class="fab fa-facebook"></i></a>
-          </li>
-          <li>
-            <a href="#" target="_blank" class="social-network twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#" target="_blank" class="social-network linkedin" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          </li>
-          <li>
-            <a href="#" target="_blank" class="social-network instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href="#" target="_blank" class="social-network pinterest" title="Pinterest"><i class="fab fa-pinterest"></i></a>
-          </li>
-          <li>
-            <a href="#" target="_blank" class="social-network dribbble" title="Dribbble"><i class="fab fa-dribbble"></i></a>
-          </li>
-        </ul>
+  <!--/ End Footer Middle -->
+  <!-- Start Footer Bottom -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="inner">
+        <div class="row">
+          <div class="col-12">
+            <div class="left">
+              <p>Copyright &copy; 2021 LumiArt. Todos los derechos reservados.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="footer_custom_text center"><p>Copyright &copy; 2021 <a href="{{ route('home') }}">LumiArt</a>.</strong> Todos los derechos reservados.</p></div>
     </div>
   </div>
-</div>
+  <!-- End Footer Middle -->
+</footer>
+<!--/ End Footer Area -->

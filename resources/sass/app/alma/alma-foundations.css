@@ -38,7 +38,7 @@ video {
 }
 audio:not([controls]) {
   display: none;
-  height: 0;7
+  height: 0.7;
 }
 [hidden],
 template {
@@ -282,7 +282,7 @@ body {
   font-family: Helvetica,Arial,sans-serif;
 }
 p, a, h1, h2, h3, h4, h5, h6{
-	text-rendering: optimizelegibility;
+  text-rendering: optimizelegibility;
 }
 input,
 button,
@@ -4322,7 +4322,7 @@ a.list-group-item-danger.active:focus {
   opacity: .9;
 }
 .widget .tooltip.top {
-	margin-top: 0px;
+  margin-top: 0px;
 }
 
 .tooltip.top {

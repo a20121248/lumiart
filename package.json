@@ -27,7 +27,10 @@
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.15.1",
         "@popperjs/core": "^2.6.0",
+        "animate.css": "^4.1.1",
+        "aos": "^2.3.4",
         "bootstrap": "^5.0.0-beta1",
+        "counterup2": "^1.0.4",
         "jquery": "^3.5.1",
         "swiper": "^6.4.5"
     }

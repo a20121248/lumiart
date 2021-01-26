@@ -1,7 +1,7 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
   <!-- Brand Logo -->
-  <a href="{{ route('home') }}" class="brand-link text-center">
+  <a href="{{ route('admin.dashboard') }}" class="brand-link text-center">
     <img src="{{ asset('storage/logos/light.png') }}" alt="LumiArt Logo" class="brand-image elevation-3" style="opacity: .8">
   </a>
 

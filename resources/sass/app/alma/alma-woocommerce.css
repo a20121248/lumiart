@@ -19,16 +19,16 @@
 
 @font-face {
     font-family: star;
-    src: url(../icon-fonts/star.eot);
-    src: url(../icon-fonts/star.eot?#iefix) format("embedded-opentype"),url(../icon-fonts/star.woff) format("woff"),url(../icon-fonts/star.ttf) format("truetype"),url(../icon-fonts/star.svg#star) format("svg");
+    src: url(storage/icons/alma/icon-fonts/star.eot);
+    src: url(storage/icons/alma/icon-fonts/star.eot?#iefix) format("embedded-opentype"),url(storage/icons/alma/icon-fonts/star.woff) format("woff"),url(storage/icons/alma/icon-fonts/star.ttf) format("truetype"),url(storage/icons/alma/icon-fonts/star.svg#star) format("svg");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: WooCommerce;
-    src: url(../icon-fonts/WooCommerce.eot);
-    src: url(../icon-fonts/WooCommerce.eot?#iefix) format("embedded-opentype"),url(../icon-fonts/WooCommerce.woff) format("woff"),url(../icon-fonts/WooCommerce.ttf) format("truetype"),url(../icon-fonts/WooCommerce.svg#WooCommerce) format("svg");
+    src: url(storage/icons/alma/icon-fonts/WooCommerce.eot);
+    src: url(storage/icons/alma/icon-fonts/WooCommerce.eot?#iefix) format("embedded-opentype"),url(storage/icons/alma/icon-fonts/WooCommerce.woff) format("woff"),url(storage/icons/alma/icon-fonts/WooCommerce.ttf) format("truetype"),url(storage/icons/alma/icon-fonts/WooCommerce.svg#WooCommerce) format("svg");
     font-weight: 400;
     font-style: normal;
 }
@@ -466,7 +466,7 @@ p.demo_store {
     position: relative;
     top: 0;
     text-transform: uppercase;
-    background: #FAFAFA url(../images/sprite.png) no-repeat -120px -351px;
+    background: #FAFAFA url("{{ asset('storage/images/alma/sprite.png') }}") no-repeat -120px -351px;
     float: right;
     width: 100%;
     -webkit-appearance: none;
@@ -748,7 +748,7 @@ p.demo_store {
     right: 0;
     width: 20px;
     height: 20px;
-    background: url(../images/ajx_loading.gif) center no-repeat rgba(255,255,255,.65) !important;
+    /*background: url("{{ asset('storage/images/alma/ajx_loading.gif') }}") center no-repeat rgba(255,255,255,.65) !important;*/
 }
 
 .woocommerce #content input.button.added:before,.woocommerce #respond input#submit.added:before,.woocommerce a.button.added:before,.woocommerce button.button.added:before,.woocommerce input.button.added:before,.woocommerce-page #content input.button.added:before,.woocommerce-page #respond input#submit.added:before,.woocommerce-page a.button.added:before,.woocommerce-page button.button.added:before,.woocommerce-page input.button.added:before {
@@ -1701,14 +1701,14 @@ table.variations .value{padding: 0 !important;}
 }
 
 input[type=radio] {
-    background: url(../images/check_radio_sheet.png) no-repeat -43px 3px;
+    background: url("{{ asset('storage/images/alma/check_radio_sheet.png') }}") no-repeat -43px 3px;
     border: none;
     width: 16px !important;
     height: 16px !important;
 }
 
 input[type=radio]:checked {
-    background: url(../images/check_radio_sheet.png) no-repeat -61px 3px;
+    background: url("{{ asset('storage/images/alma/check_radio_sheet.png') }}") no-repeat -61px 3px;
     border: none;
     width: 16px !important;
     height: 16px !important;
@@ -1777,35 +1777,35 @@ input:hover,input:focus,input:active {
 }
 
 .woocommerce #payment div.payment_box .wc-credit-card-form-card-cvc.visa,.woocommerce #payment div.payment_box .wc-credit-card-form-card-expiry.visa,.woocommerce #payment div.payment_box .wc-credit-card-form-card-number.visa,.woocommerce-page #payment div.payment_box .wc-credit-card-form-card-cvc.visa,.woocommerce-page #payment div.payment_box .wc-credit-card-form-card-expiry.visa,.woocommerce-page #payment div.payment_box .wc-credit-card-form-card-number.visa {
-    background-image: url(../images/icons/credit-cards/visa.png);
+    background-image: url("{{ asset('storage/images/alma/icons/credit-cards/visa.png') }}");
 }
 
 .woocommerce #payment div.payment_box .wc-credit-card-form-card-cvc.mastercard,.woocommerce #payment div.payment_box .wc-credit-card-form-card-expiry.mastercard,.woocommerce #payment div.payment_box .wc-credit-card-form-card-number.mastercard,.woocommerce-page #payment div.payment_box .wc-credit-card-form-card-cvc.mastercard,.woocommerce-page #payment div.payment_box .wc-credit-card-form-card-expiry.mastercard,.woocommerce-page #payment div.payment_box .wc-credit-card-form-card-number.mastercard {
-    background-image: url(../images/icons/credit-cards/mastercard.png);
+    background-image: url("{{ asset('storage/images/alma/icons/credit-cards/mastercard.png') }}");
 }
 
 .woocommerce #payment div.payment_box .wc-credit-card-form-card-cvc.laser,.woocommerce #payment div.payment_box .wc-credit-card-form-card-expiry.laser,.woocommerce #payment div.payment_box .wc-credit-card-form-card-number.laser,.woocommerce-page #payment div.payment_box .wc-credit-card-form-card-cvc.laser,.woocommerce-page #payment div.payment_box .wc-credit-card-form-card-expiry.laser,.woocommerce-page #payment div.payment_box .wc-credit-card-form-card-number.laser {
-    background-image: url(../images/icons/credit-cards/laser.png);
+    background-image: url("{{ asset('storage/images/alma/icons/credit-cards/laser.png') }}");
 }
 
 .woocommerce #payment div.payment_box .wc-credit-card-form-card-cvc.dinersclub,.woocommerce #payment div.payment_box .wc-credit-card-form-card-expiry.dinersclub,.woocommerce #payment div.payment_box .wc-credit-card-form-card-number.dinersclub,.woocommerce-page #payment div.payment_box .wc-credit-card-form-card-cvc.dinersclub,.woocommerce-page #payment div.payment_box .wc-credit-card-form-card-expiry.dinersclub,.woocommerce-page #payment div.payment_box .wc-credit-card-form-card-number.dinersclub {
-    background-image: url(../images/icons/credit-cards/diners.png);
+    background-image: url("{{ asset('storage/images/alma/icons/credit-cards/diners.png') }}");
 }
 
 .woocommerce #payment div.payment_box .wc-credit-card-form-card-cvc.maestro,.woocommerce #payment div.payment_box .wc-credit-card-form-card-expiry.maestro,.woocommerce #payment div.payment_box .wc-credit-card-form-card-number.maestro,.woocommerce-page #payment div.payment_box .wc-credit-card-form-card-cvc.maestro,.woocommerce-page #payment div.payment_box .wc-credit-card-form-card-expiry.maestro,.woocommerce-page #payment div.payment_box .wc-credit-card-form-card-number.maestro {
-    background-image: url(../images/icons/credit-cards/maestro.png);
+    background-image: url("{{ asset('storage/images/alma/icons/credit-cards/maestro.png') }}");
 }
 
 .woocommerce #payment div.payment_box .wc-credit-card-form-card-cvc.jcb,.woocommerce #payment div.payment_box .wc-credit-card-form-card-expiry.jcb,.woocommerce #payment div.payment_box .wc-credit-card-form-card-number.jcb,.woocommerce-page #payment div.payment_box .wc-credit-card-form-card-cvc.jcb,.woocommerce-page #payment div.payment_box .wc-credit-card-form-card-expiry.jcb,.woocommerce-page #payment div.payment_box .wc-credit-card-form-card-number.jcb {
-    background-image: url(../images/icons/credit-cards/jcb.png);
+    background-image: url("{{ asset('storage/images/alma/icons/credit-cards/jcb.png') }}");
 }
 
 .woocommerce #payment div.payment_box .wc-credit-card-form-card-cvc.amex,.woocommerce #payment div.payment_box .wc-credit-card-form-card-expiry.amex,.woocommerce #payment div.payment_box .wc-credit-card-form-card-number.amex,.woocommerce-page #payment div.payment_box .wc-credit-card-form-card-cvc.amex,.woocommerce-page #payment div.payment_box .wc-credit-card-form-card-expiry.amex,.woocommerce-page #payment div.payment_box .wc-credit-card-form-card-number.amex {
-    background-image: url(../images/icons/credit-cards/amex.png);
+    background-image: url("{{ asset('storage/images/alma/icons/credit-cards/amex.png') }}");
 }
 
 .woocommerce #payment div.payment_box .wc-credit-card-form-card-cvc.discover,.woocommerce #payment div.payment_box .wc-credit-card-form-card-expiry.discover,.woocommerce #payment div.payment_box .wc-credit-card-form-card-number.discover,.woocommerce-page #payment div.payment_box .wc-credit-card-form-card-cvc.discover,.woocommerce-page #payment div.payment_box .wc-credit-card-form-card-expiry.discover,.woocommerce-page #payment div.payment_box .wc-credit-card-form-card-number.discover {
-    background-image: url(../images/icons/credit-cards/discover.png);
+    background-image: url("{{ asset('storage/images/alma/icons/credit-cards/discover.png') }}");
 }
 
 .woocommerce #payment div.payment_box span.help,.woocommerce-page #payment div.payment_box span.help {
@@ -2130,7 +2130,7 @@ h3#order_review_heading {
 
 @media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi) {
     .woocommerce #content input.button.loading:before,.woocommerce #respond input#submit.loading:before,.woocommerce a.button.loading:before,.woocommerce button.button.loading:before,.woocommerce input.button.loading:before,.woocommerce-page #content input.button.loading:before,.woocommerce-page #respond input#submit.loading:before,.woocommerce-page a.button.loading:before,.woocommerce-page button.button.loading:before,.woocommerce-page input.button.loading:before {
-        background-image: url(../images/ajax-loader@2x.gif);
+        background-image: url(storage/images/alma/ajax-loader@2x.gif);
         background-size: 16px 16px;
     }
 }
@@ -2238,7 +2238,7 @@ p.myaccount_address {
 }
 
 .alma_little_shopping_bag .title a {
-    background: url(../img/shopping-bag.png) no-repeat center center;
+    /*background: url(../img/shopping-bag.png) no-repeat center center;*/
     text-indent: -9999px;
     width: 40px;
     height: 36px;
@@ -2677,7 +2677,7 @@ h1.page-title {
     width: auto;
     text-transform: uppercase;
     border: 1px solid #ededed;
-    background: #FAFAFA url(../images/sprite.png) no-repeat -243px -351px;
+    /*background: #FAFAFA url("{{ asset('storage/images/alma/sprite.png') }}") no-repeat -243px -351px;*/
     float: right;
     width: 100%;
     -webkit-appearance: none;
@@ -2706,7 +2706,7 @@ h1.page-title {
 }
 
 ul.products li.hentry:hover .added_to_cart,ul.products li.hentry .added_to_cart {
-    background: url(../img/woo-sucess.png) no-repeat center center;
+    /*background: url(../img/woo-sucess.png) no-repeat center center;*/
     padding: 10px 14px 16px 25px;
     top: 35% !important;
 }

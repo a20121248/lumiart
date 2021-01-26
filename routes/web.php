@@ -86,11 +86,12 @@ Route::group(['middleware' => ['auth:sanctum', 'verified'], 'prefix' => 'admin',
 
 
 Route::get('/', 'App\Http\Controllers\App\PageController@getHome')->name('home');
-Route::get('/home2', 'App\Http\Controllers\App\PageController@getHome2')->name('home2');
-Route::get('/home3', 'App\Http\Controllers\App\PageController@getHome3')->name('home3');
-Route::get('/home4', 'App\Http\Controllers\App\PageController@getHome4')->name('home4');
-Route::get('/home5', 'App\Http\Controllers\App\PageController@getHome5')->name('home5');
+Route::get('/nosotros', ['uses' => 'App\Http\Controllers\App\PageController@getAboutUs'])->name('about_us');
+Route::get('/productos', ['uses' => 'App\Http\Controllers\App\ProductController@getProducts'])->name('products');
+Route::get('/catalog', ['uses' => 'App\Http\Controllers\App\PageController@getCatalog'])->name('catalog');
+Route::get('/contactanos', ['uses' => 'App\Http\Controllers\App\PageController@getContactUs'])->name('contact_us');
 
+/*
 Route::get('/quienes-somos', ['uses' => 'App\PageController@getHome'])->name('about_us');
 Route::get('/quienes-somos/perfil', ['uses' => 'App\PageController@getHome'])->name('profile');
 
@@ -102,6 +103,7 @@ Route::get('/blog/{slug}', ['uses' => 'App\PageController@getHome'])->name('post
 Route::get('/contactanos', ['uses' => 'App\PageController@getHome'])->name('contact_us');
 
 Route::get('/buscar', ['uses' => 'App\PageController@getHome'])->name('search');
+*/
 
 Route::get('/privacidad', ['uses' => 'App\PageController@getHome'])->name('privacy');
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
